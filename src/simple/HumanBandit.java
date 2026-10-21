@@ -5,6 +5,7 @@ import java.util.Random;
 public class HumanBandit implements Creature{
     private String name;
     private int health;
+    private int attackMaxRange;
 
     public HumanBandit(String name) {
         this.health = 20;
@@ -14,11 +15,21 @@ public class HumanBandit implements Creature{
     @Override
     public int attack() {
         Random random = new Random();
-        if (health < 10) {
+        if (health <= 10) {
+            attackMaxRange = 12;
             return random.nextInt(12) + 1;
         } else {
+            attackMaxRange = 7;
             return random.nextInt(7) + 1;
         }
+    }
+
+    public int getAttackMaxRange() {
+        return attackMaxRange;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
     }
 
     @Override
