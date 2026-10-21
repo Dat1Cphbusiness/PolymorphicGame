@@ -27,6 +27,11 @@ public class Orc implements Creature{
 
     @Override
     public void takeDamage(int damage) {
+        Random r = new Random();
+        if (r.nextInt() % 2 == 0) {
+            health -= damage/2;
+            return;
+        }
         health -= damage;
 
     }
