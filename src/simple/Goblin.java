@@ -14,7 +14,7 @@ public class Goblin implements Creature{
 
     @Override
     public String meet () {
-        return "a goblin has jumped out from behind a rock ready for an ambush";
+        return "a goblin has jumped out from behind a rock ready for an ambush GET READY";
     }
 
     public int getHealth () {
