@@ -14,8 +14,11 @@ public class HumanBandit implements Creature{
     @Override
     public int attack() {
         Random random = new Random();
-        int banditAttack = random.nextInt(7) + 1;
-        return banditAttack;
+        if (health < 10) {
+            return random.nextInt(12) + 1;
+        } else {
+            return random.nextInt(7) + 1;
+        }
     }
 
     @Override
