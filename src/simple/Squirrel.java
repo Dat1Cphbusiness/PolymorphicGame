@@ -7,6 +7,11 @@ public class Squirrel implements Creature {
     private int health;
     private boolean acornIsInvolved;
 
+    Squirrel(String name){
+        this.name = name;
+        this.health = 40;
+    }
+
 
     // return a number between 0 and 10
     // attack can depend on different things that you decide
