@@ -23,9 +23,8 @@ public class Squirrel implements Creature {
     // return a String to end the sentence "You are walking and "
     // it could for example be "a giant spider emerges from the dark corner" or " a happy troll jumps out of the woods"
     public String meet(){
-        isAcornInvolved();
         StringBuilder s = new StringBuilder("You are walking and ");
-        if (acornIsInvolved){
+        if (isAcornInvolved()){
             s.append("an acorn falls directly in front of you.");
         } else s.append("a small squirrel appears in front of you.");
         s.append("The squirrel stares at you with deep, thoughtless eyes.");
