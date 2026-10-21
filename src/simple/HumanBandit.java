@@ -12,7 +12,7 @@ public class HumanBandit implements Creature{
     @Override
     public String meet() {
         return "spots a abandoned camp. As you investigate the camp, some bushes rattle..." +
-                "\n" + "";
+                "\n" + "A human bandit jumps out of the bush, with a word drawn";
     }
 
     @Override
