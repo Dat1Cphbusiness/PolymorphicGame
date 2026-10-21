@@ -1,11 +1,11 @@
 package simple;
 
-public class Orc implements Creature {
+public class GreatOrc implements Creature {
     private String name;
     private int health;
     private boolean lowHealth;
 
-    public Orc(String name) {
+    public GreatOrc(String name) {
         this.name = name;
         this.health = 10;
         this.lowHealth = false;
@@ -36,7 +36,7 @@ public class Orc implements Creature {
     }
 
     public String meet() {
-        return "you hear a loud roar and a giant orc comes charging towards you";
+        return "you hear a loud roar and a giant great orc comes charging towards you";
     }
 
     private boolean isLowHealth() {
