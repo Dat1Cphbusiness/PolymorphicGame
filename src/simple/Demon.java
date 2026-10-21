@@ -1,4 +1,4 @@
-import simple.Creature;
+package simple;
 
 import java.util.Random;
 
