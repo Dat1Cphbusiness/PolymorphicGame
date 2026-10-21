@@ -31,4 +31,3 @@ public class Zombie implements Creature{
         return "from the dark forest there is a zombie emerging from the dark";
     }
 }
-//
