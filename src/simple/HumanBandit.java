@@ -1,12 +1,21 @@
 package simple;
 
+import java.util.Random;
+
 public class HumanBandit implements Creature{
     private String name;
     private int health;
 
+    public HumanBandit(String name) {
+        this.health = 20;
+        this.name = name;
+    }
+
     @Override
     public int attack() {
-        return 0;
+        Random random = new Random();
+        int banditAttack = random.nextInt(7) + 1;
+        return banditAttack;
     }
 
     @Override
@@ -17,7 +26,7 @@ public class HumanBandit implements Creature{
 
     @Override
     public void takeDamage(int damage) {
-
+        health -= damage;
     }
 
     @Override
