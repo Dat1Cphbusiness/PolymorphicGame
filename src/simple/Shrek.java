@@ -7,7 +7,7 @@ public final class Shrek implements Creature {
 
     public Shrek(String name) {
         this.name = name;
-        this.health = 8;
+        this.health = 189;
         this.inSwamp = true;
     }
 
