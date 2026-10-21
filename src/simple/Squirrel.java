@@ -15,9 +15,8 @@ public class Squirrel implements Creature {
 
 
     public int attack(){
-        isAcornInvolved();
         Random r = new Random();
-        if (acornIsInvolved){
+        if (isAcornInvolved()){
             return 12;
         }
         return r.nextInt(7);
