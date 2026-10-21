@@ -13,7 +13,11 @@ public class Centaur implements Creature{
 
     @Override
     public int attack() {
-        return 35;
+        if (health > 10){
+            return 35;
+        } else {
+            return 20;
+        }
     }
 
     @Override
