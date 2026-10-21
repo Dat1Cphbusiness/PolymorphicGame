@@ -1,5 +1,7 @@
 package simple;
 
+import java.util.Random;
+
 public final class Shrek implements Creature {
     private final String name;
     private int health;
@@ -7,8 +9,16 @@ public final class Shrek implements Creature {
 
     public Shrek(String name) {
         this.name = name;
-        this.health = 8;
-        this.inSwamp = true;
+        this.health = 189;
+
+        Random r = new Random();
+
+        if (r.nextInt() % 2 == 0) {
+            this.inSwamp = true;
+        } else {
+            this.inSwamp = false;
+        }
+
     }
 
     @Override
