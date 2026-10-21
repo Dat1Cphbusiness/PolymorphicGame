@@ -23,11 +23,11 @@ public class Squirrel implements Creature {
     }
 
     public String meet(){
-        StringBuilder s = new StringBuilder("You are walking and ");
+        StringBuilder s = new StringBuilder();
         if (isAcornInvolved()){
             s.append("an acorn falls directly in front of you.");
         } else s.append("a small squirrel appears in front of you.");
-        s.append("The squirrel stares at you with deep, thoughtless eyes.");
+        s.append(" The squirrel stares at you with deep, thoughtless eyes.");
         return s.toString();
     }
 
@@ -51,5 +51,17 @@ public class Squirrel implements Creature {
         acornIsInvolved = r.nextBoolean();
         return acornIsInvolved;
     }
+
+    public boolean getAcornIsInvolved(){
+        return acornIsInvolved;
+    }
+
+    public int getSquirrelMaxAttackRange(){
+        return 7;
+    }
+    public int getSquirrelMinAttackRange(){
+        return 0;
+    }
+
 }
 
