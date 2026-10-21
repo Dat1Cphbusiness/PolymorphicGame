@@ -2,12 +2,12 @@ package simple;
 
 import java.util.Random;
 
-public class SpuderMan implements Creature {
+public class SpooderMan implements Creature {
     private final Random random = new Random();
     private final String name;
     private int health;
 
-    public SpuderMan(String name) {
+    public SpooderMan(String name) {
         this.name = name;
         this.health = 100;
     }

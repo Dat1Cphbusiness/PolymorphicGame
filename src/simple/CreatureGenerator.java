@@ -18,6 +18,7 @@ public class CreatureGenerator {
         creatures.add(new Spider("Peter"));
         creatures.add(new Dragon("Smaug"));
         creatures.add(new Shrek("Shrek"));
+        creatures.add(new BoosterKongen("SukkerFri"))
     }
 
     public Creature getRandomCreature() {
